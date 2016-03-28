@@ -1,4 +1,4 @@
-// Work out your gigasecond birthday
+// Package gigasecond can be used to work out your gigasecond birthday
 package gigasecond
 
 import "time"
@@ -6,7 +6,7 @@ import "time"
 // testVersion declaration for exercism.io tests
 const testVersion = 4
 
-// Add a gigasecond to a time date
+// AddGigasecond adds a gigasecond 10^9 to a time date
 func AddGigasecond(tm time.Time) time.Time {
-    return tm.Add(1e9 * time.Second)
+	return tm.Add(1e9 * time.Second)
 }
